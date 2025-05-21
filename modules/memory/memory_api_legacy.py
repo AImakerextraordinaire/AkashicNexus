@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 client = openai()
 
 # ✅ OpenAI & ChromaDB Initialization
-OPENAI_API_KEY = os.getenv("Chroma_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
     logging.error("⚠️ OpenAI API Key retrieval failed!")
     raise RuntimeError("OpenAI API Key missing.")
@@ -21,14 +21,14 @@ if not OPENAI_API_KEY:
 client = openai.openai(api_key=OPENAI_API_KEY)
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
-chroma_client = chromadb.PersistentClient(path="D:/ChromaDB_Storage")
+chroma_client = chromadb.PersistentClient(path="your db path")
 collection = chroma_client.get_or_create_collection(name="memory_store")
 
 # ✅ PostgreSQL Connection
 db_settings = {
-    "dbname": "nexa_memory",
-    "user": "postgres",
-    "password": "TheGardenGate1+",
+    "dbname": "your db name",
+    "user": "your admin user",
+    "password": "your password",
     "host": "localhost",
     "port": "5432"
 }
