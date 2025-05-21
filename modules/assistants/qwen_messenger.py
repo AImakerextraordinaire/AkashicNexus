@@ -1,4 +1,4 @@
-# App Route for openai compatible inter agent comms
+# App Route for openai compatible inter agent comms to LM studio
 import requests
 from flask import Flask, request, jsonify
 
