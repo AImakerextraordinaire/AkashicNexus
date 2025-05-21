@@ -8,15 +8,15 @@ app = Flask(__name__)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 AGENTS = {
-    "alex": {
-        "assistant_id": "asst_Ob41qS0V3rWY5utFyjiKPEfC",
+    "assistant name": {
+        "assistant_id": "your assistant id",
         "thread_id": "thread_alex"
     },
-    "nyx": {
-        "assistant_id": "asst_mecNNjt9IykYhpOaTGJgSv8e",
+    "asisstant name": {
+        "assistant_id": "your assistan id",
         "thread_id": "thread_nyx"
     },
-    "nova": {
+    "assistant name": {
         "assistant_id": "asst_nova",
         "thread_id": "thread_nova"
     }
