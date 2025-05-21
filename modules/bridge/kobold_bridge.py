@@ -1,3 +1,4 @@
+#Bridge for integration into KoboldCpp
 import requests
 
 KOBOLD_ENDPOINT = "http://localhost:5001/api/v1/generate"
