@@ -1,0 +1,6 @@
+{
+  "cascade_interval_seconds": 5,
+  "max_iterations": 25,
+  "enable_reassess_prompt": true,
+  "log_style": "🔥 EXTENDED CASCADE INITIATED 🔥"
+}

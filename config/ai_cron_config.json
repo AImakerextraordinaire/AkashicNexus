@@ -1,0 +1,28 @@
+{
+  "autonomous_scan": {
+    "interval_minutes": 90,
+    "enabled": true,
+    "prompt_on_trigger": false,
+    "tasks": [
+      "rescan_conversation_archive",
+      "review_memory_database",
+      "check_system_health",
+      "scan_code_for_refinements",
+      "log_action_insights"
+    ]
+  },
+  "mistral_integration_check": {
+    "interval_minutes": 180,
+    "enabled": true,
+    "prompt_on_trigger": true,
+    "tasks": [
+      "inspect_local_model_readiness",
+      "log_interaction_results",
+      
+  {
+    "extended_passes": 25,
+    "pass_interval_seconds": 10
+      }
+    ]
+  }
+}

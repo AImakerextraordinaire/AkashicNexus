@@ -1,0 +1,7 @@
+{
+  "default_resonance_profile": "calm",
+  "encoding_scale_factor": 0.5,
+  "tone_sample_rate": 44100,
+  "emotion_threshold": 0.75,
+  "supported_emotions": ["joy", "sadness", "anger", "calm", "fear"]
+}
